@@ -1,0 +1,47 @@
+{
+	"title": "Microsoft Graph Transformer",
+	"description": "Microsoft Graph Transformer for Open Integration Hub (based on https://github.com/openintegrationhub/getmyinvoice-transformer).",
+	"actions":
+	{
+		"contactDataFromOih":
+		{
+			"title": "Transform contact data from OIH",
+			"description": "Transform the incoming contact data from OIH",
+			"main": "./lib/actions/contactDataFromOih.js",
+			"metadata":
+			{
+				"out": {}
+			}
+		},
+		"contactDataToOih":
+		{
+			"title": "Transform contact data to OIH",
+			"description": "Transform the incoming contact data to OIH",
+			"main": "./lib/actions/contactDataToOih.js",
+			"metadata":
+			{
+				"out": {}
+			}
+		},
+		"eventDataFromOih":
+		{
+			"title": "Transform event data from OIH",
+			"description": "Transform the incoming event data from OIH",
+			"main": "./lib/actions/eventDataFromOih.js",
+			"metadata":
+			{
+				"out": {}
+			}
+		},
+		"eventDataToOih":
+		{
+			"title": "Transform event data to OIH",
+			"description": "Transform the incoming event data to OIH",
+			"main": "./lib/actions/eventDataToOih.js",
+			"metadata":
+			{
+				"out": {}
+			}
+		}
+	}
+}
