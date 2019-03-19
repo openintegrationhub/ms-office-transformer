@@ -1,8 +1,8 @@
 {
 	"name": "ms-graph-transformer",
 	"version": "1.0.1",
-	"description": "Microsoft Graph Transformer for Open Integration Hub (based on https://github.com/openintegrationhub/getmyinvoice-transformer).",
-	"author": "fino.run, agindo GmbH",
+	"description": "Microsoft Graph Transformer for Open Integration Hub.",
+	"author": "agindo GmbH",
 	"license": "Apache-2.0",
 	"repository": "openintegrationhub/ms-office-transformer",
 	"engines": {
