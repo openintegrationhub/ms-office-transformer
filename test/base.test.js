@@ -29,6 +29,11 @@ const oihContact = {
          "uid":"jhpgymi1k3ecspvr"
       },
       {
+         "type":"mobil",
+         "value":"0190123456",
+         "uid":"jhpgymi1k3ecspvdr"
+      },
+      {
          "type":"email",
          "value":"x@y.de.de",
          "description":"",
@@ -103,6 +108,7 @@ const msContact = {
     birthday: '1980-01-21T00:00:00Z',
     homePhones: [ '0123456789', '+490123456' ],
     businessPhones: [],
+    mobilePhone: '0190123456',
     emailAddresses: [
       { name: 'x@y.de.de', address: 'x@y.de.de' },
       { name: 'mail@bail.com', address: 'mail@bail.com' },
@@ -149,11 +155,14 @@ describe('transform from oih data to microsoft', () => {
     expect(result.addresses[0].zipcode).to.equal('22760');
 
     expect(result.contactData).to.be.an('array');
-    expect(result.contactData).to.have.lengthOf(5);
+    expect(result.contactData).to.have.lengthOf(6);
+
     expect(result.contactData[0].type).to.equal('phone');
     expect(result.contactData[0].value).to.equal('0123456789');
-    expect(result.contactData[4].type).to.equal('email');
-    expect(result.contactData[4].value).to.equal('x@y.de.de');
+    expect(result.contactData[2].type).to.equal('mobil');
+    expect(result.contactData[2].value).to.equal('0190123456');
+    expect(result.contactData[5].type).to.equal('email');
+    expect(result.contactData[5].value).to.equal('x@y.de.de');
 
     expect(result.categories).to.be.an('array');
     expect(result.categories).to.have.lengthOf(1);
